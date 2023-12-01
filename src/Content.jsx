@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { ProductsIndex } from "./ProductsIndex";
+import { Modal } from "./Modal";
 
 export function Content() {
   const [products, setProducts] = useState([]);
@@ -23,6 +24,9 @@ export function Content() {
       <Signup />
       <h1 className="text-3xl font-bold underline">Welcome to Bookish!</h1>
       <ProductsIndex products={products} />
+      <Modal show={true}>
+        <p>Hello!</p>
+      </Modal>
     </main>
   );
 }
