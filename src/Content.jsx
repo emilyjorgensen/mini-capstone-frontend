@@ -18,10 +18,10 @@ export function Content() {
   useEffect(handleIndexProducts, []);
 
   return (
-    <main>
+    <main className="bg-grey">
       <Login />
       <Signup />
-      <h1>Welcome to Bookish!</h1>
+      <h1 className="text-3xl font-bold underline">Welcome to Bookish!</h1>
       <ProductsIndex products={products} />
     </main>
   );

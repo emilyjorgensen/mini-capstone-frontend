@@ -6,7 +6,9 @@ function App() {
   return (
     <div>
       <Header />
-      <Content />
+      <div className="container mx-auto">
+        <Content />
+      </div>
       <Footer />
     </div>
   );
